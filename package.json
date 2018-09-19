@@ -1,7 +1,7 @@
 {
-  "name": "ethjs-account",
+  "name": "wanjs-account",
   "version": "0.1.4",
-  "description": "A simple Ethereum account utility module.",
+  "description": "A simple Wanchain account utility module.",
   "main": "lib/index.js",
   "files": [
     "dist",
@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "start": "npm test",
-    "release": "npmpub",
+    "release": "npm publish",
     "pretest": "npm run lint",
     "prepublish": "npm run build",
     "prebuild": "npm run build:clean && npm run test",
@@ -33,26 +33,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ethjs/ethjs-account.git"
+    "url": "git+ssh://git@github.com/WanJS/wanjs-account.git"
   },
   "keywords": [
-    "ethereum",
+    "wanchain",
     "rpc",
     "formatter",
     "format",
-    "ethereum",
     "encoding",
     "decoding"
   ],
   "authors": [
-    "Nick Dodson <nick.dodson@consensys.net>"
-  ],
-  "contributors": [
-    {
-      "name": "Richard Moore",
-      "email": "me@ricmoo.com",
-      "url": "https://ethers.io"
-    }
+    "Tyiron70 <tyrion70@gmail.com>"
   ],
   "engines": {
     "npm": ">=3",
@@ -60,9 +52,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ethjs/ethjs-account/issues"
+    "url": "https://github.com/WanJS/wanjs-account/issues"
   },
-  "homepage": "https://github.com/ethjs/ethjs-account#readme",
+  "homepage": "https://github.com/WanJS/wanjs-account#readme",
   "babel": {
     "plugins": [
       [
@@ -140,7 +132,7 @@
     "babel-core": "6.18.2",
     "babel-eslint": "7.1.0",
     "babel-loader": "6.2.8",
-    "ethereumjs-util": "5.0.1",
+    "wanchainjs-util": "5.2.1",
     "sandboxed-module": "2.0.3",
     "babel-plugin-check-es2015-constants": "6.8.0",
     "babel-plugin-transform-es2015-arrow-functions": "6.8.0",

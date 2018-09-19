@@ -7,7 +7,7 @@ const privateToAccount = require('../index.js').privateToAccount;
 const privateToPublic = require('../index.js').privateToPublic;
 const publicToAddress = require('../index.js').publicToAddress;
 const crypto = require('crypto');
-const ethUtil = require('ethereumjs-util');
+const ethUtil = require('wanchainjs-util');
 const SandboxedModule = require('sandboxed-module');
 
 SandboxedModule.registerBuiltInSourceTransformer('istanbul');

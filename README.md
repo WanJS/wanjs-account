@@ -1,43 +1,21 @@
-## ethjs-account
+## wanjs-account
 
-<div>
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-account">
-    <img src="https://david-dm.org/ethjs/ethjs-account.svg"
-    alt="Dependency Status" />
-  </a>
+[![CircleCI][circle-image]][circle-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![dependency status][dep-image]][dep-url]
+[![NPM][npm-image]][npm-url]
 
-  <!-- devDependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-account#info=devDependencies">
-    <img src="https://david-dm.org/ethjs/ethjs-account/dev-status.svg" alt="devDependency Status" />
-  </a>
+[circle-image]: https://circleci.com/gh/WanJS/wanjs-account.svg?style=svg
+[circle-url]: https://circleci.com/gh/WanJS/wanjs-account
+[dep-image]: https://david-dm.org/WanJS/wanjs-account.svg
+[dep-url]: https://david-dm.org/WanJS/wanjs-account
+[coveralls-image]: https://coveralls.io/repos/github/WanJS/wanjs-account/badge.svg?branch=dev
+[coveralls-url]: https://coveralls.io/github/WanJS/wanjs-account?branch=dev
+[npm-image]: http://img.shields.io/npm/v/wanjs-account.svg
+[npm-url]: https://www.npmjs.org/package/wanjs-account
 
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/ethjs/ethjs-account">
-    <img src="https://travis-ci.org/ethjs/ethjs-account.svg"
-    alt="Build Status" />
-  </a>
 
-  <!-- NPM Version -->
-  <a href="https://www.npmjs.org/package/ethjs-account">
-    <img src="http://img.shields.io/npm/v/ethjs-account.svg"
-    alt="NPM version" />
-  </a>
-
-  <!-- Test Coverage -->
-  <a href="https://coveralls.io/r/ethjs/ethjs-account">
-    <img src="https://coveralls.io/repos/github/ethjs/ethjs-account/badge.svg" alt="Test Coverage" />
-  </a>
-
-  <!-- Javascript Style -->
-  <a href="http://airbnb.io/javascript/">
-    <img src="https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg" alt="js-airbnb-style" />
-  </a>
-</div>
-
-<br />
-
-A simple Ethereum account utility module.
+A simple Wanchain account utility module.
 
 Warning: if using with React Native, please use a pre-build distribution (i.e. npm run buld -> /dist/..). We will be switching to the Sepcc256k1 module which should resolve this issue.
 
@@ -50,7 +28,7 @@ npm install --save ethjs-account
 ## Usage
 
 ```js
-const generate = require('ethjs-account').generate;
+const generate = require('wanjs-account').generate;
 
 console.log(generate('892h@fsdf11ks8sk^2h8s8shfs.jk39hsoi@hohskd'));
 
@@ -120,13 +98,14 @@ We communicate via [issues](https://github.com/ethjs/ethjs-account/issues) and [
 
 ## Licence
 
-This project is licensed under the MIT license, Copyright (c) 2016 Nick Dodson/2014 Richard Moore. For more information see LICENSE.md.
+This project is licensed under the MIT license, Copyright (c) 2018 Tyrion70. For more information see LICENSE.md.
 
 ```
 The MIT License (MIT)
  
-Copyright (c) 2016 Nick Dodson
-Copyright (c) 2014 Richard Moore
+Copyright (c) 2018 Tyrion70
+Original Copyright (c) 2016 Nick Dodson
+Original Copyright (c) 2014 Richard Moore
  
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

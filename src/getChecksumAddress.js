@@ -14,7 +14,7 @@ module.exports = function getChecksumAddress(addressInput) {
   var address = addressInput; // eslint-disable-line
 
   if (typeof(address) !== 'string' || !address.match(/^0x[0-9A-Fa-f]{40}$/)) {
-    throw new Error(`[ethjs-account] invalid address value ${JSON.stringify(address)} not a valid hex string`);
+    throw new Error(`[wanjs-account] invalid address value ${JSON.stringify(address)} not a valid hex string`);
   }
 
   address = address.substring(2).toLowerCase();
@@ -22,10 +22,10 @@ module.exports = function getChecksumAddress(addressInput) {
 
   address = address.split('');
   for (var i = 0; i < 40; i += 2) { // eslint-disable-line
-    if ((hashed[i >> 1] >> 4) >= 8) {
+    if ((hashed[i >> 1] >> 4) < 8) {
       address[i] = address[i].toUpperCase();
     }
-    if ((hashed[i >> 1] & 0x0f) >= 8) {
+    if ((hashed[i >> 1] & 0x0f) < 8) {
       address[i + 1] = address[i + 1].toUpperCase();
     }
   }
